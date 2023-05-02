@@ -1,4 +1,4 @@
-package be.intecbrussel;
+package be.intecbrussel.intro;
 
 import java.io.IOException;
 import java.nio.file.*;

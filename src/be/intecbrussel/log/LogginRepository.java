@@ -1,2 +1,4 @@
-package be.intecbrussel.log;public class LogginRepository {
+package be.intecbrussel.log;
+
+public class LogginRepository {
 }
