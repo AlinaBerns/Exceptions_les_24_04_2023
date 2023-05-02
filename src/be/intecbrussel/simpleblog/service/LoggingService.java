@@ -1,6 +1,7 @@
 package be.intecbrussel.simpleblog.service;
 
 import be.intecbrussel.simpleblog.model.Level;
+import be.intecbrussel.simpleblog.model.Log;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,10 +11,10 @@ import java.util.Arrays;
 
 public class LoggingService {
     private final Path logFilePath = Paths.get("log/log.txt");
-    public void logToWrite(IOException e, Level level) throws IOException {
+    public void logToWrite(Log log) throws IOException {
 
         FileWriter fileWriter = new FileWriter(logFilePath.toFile(), true);
-        fileWriter.write(level + Arrays.toString(e.getStackTrace()) + "\n");
+        fileWriter.write(log + "\n");
 
         fileWriter.close();
     }

@@ -1,6 +1,7 @@
 package be.intecbrussel.simpleblog;
 
 import be.intecbrussel.simpleblog.model.Level;
+import be.intecbrussel.simpleblog.model.Log;
 import be.intecbrussel.simpleblog.service.LoggingService;
 import be.intecbrussel.simpleblog.model.Account;
 import be.intecbrussel.simpleblog.service.AccountService;
@@ -38,10 +39,10 @@ public class BlogApp {
             accounts.forEach(System.out::println);
         } catch (IOException e) {
             //e.printStackTrace();
-            System.err.println("No accounts found");
+            Log log = new Log(e.getStackTrace(), "No accounts found", Level.DEBUG);
             LoggingService loggingService = new LoggingService();
             try {
-                loggingService.logToWrite(e, Level.DEBUG);
+                loggingService.logToWrite(log);
                 System.out.println("The error is recorded in the log file");
             } catch (IOException ex) {
                 System.err.println("The error is not recorded in the log file");
@@ -62,10 +63,10 @@ public class BlogApp {
             System.out.println(account.getUsername() + " has succesfully logged in!");
         } catch (IOException e) {
             //e.printStackTrace();
-            System.err.println("No accounts found");
+            Log log = new Log(e.getStackTrace(), "No accounts found", Level.WARNING);
             LoggingService loggingService = new LoggingService();
             try {
-                loggingService.logToWrite(e, Level.ERROR);
+                loggingService.logToWrite(log);
                 System.out.println("The error is recorded in the log file");
             } catch (IOException ex) {
                 System.err.println("The error is not recorded in the log file");
@@ -85,10 +86,10 @@ public class BlogApp {
             accountService.registerAccount(username, password);
         } catch (IOException e) {
             //e.printStackTrace();
-            System.err.println("Such an account has already been registered");
+            Log log = new Log(e.getStackTrace(), "Such an account has already been registered", Level.ERROR);
             LoggingService loggingService = new LoggingService();
             try {
-                loggingService.logToWrite(e, Level.WARNING);
+                loggingService.logToWrite(log);
                 System.out.println("The error is recorded in the log file");
             } catch (IOException ex) {
                 System.err.println("The error is not recorded in the log file");
