@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41b34670-b8d7-4d39-b527-4df6f718b06c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/log/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/simpleblog/model/Level.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/log/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/simpleblog/model/Log.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/log/LogginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/simpleblog/data/LogginRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/log/LoggingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/simpleblog/service/LoggingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/intecbrussel/simpleblog/BlogApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/intecbrussel/simpleblog/BlogApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
