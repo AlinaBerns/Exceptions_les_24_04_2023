@@ -1,12 +1,12 @@
-package be.intecbrussel.log;
+package be.intecbrussel.simpleblog.service;
+
+import be.intecbrussel.simpleblog.model.Level;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class LoggingService {
     private final Path logFilePath = Paths.get("log/log.txt");

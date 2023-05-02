@@ -1,8 +1,7 @@
 package be.intecbrussel.simpleblog;
 
-import be.intecbrussel.log.Level;
-import be.intecbrussel.log.LoggingService;
-import be.intecbrussel.simpleblog.data.AccountRepository;
+import be.intecbrussel.simpleblog.model.Level;
+import be.intecbrussel.simpleblog.service.LoggingService;
 import be.intecbrussel.simpleblog.model.Account;
 import be.intecbrussel.simpleblog.service.AccountService;
 

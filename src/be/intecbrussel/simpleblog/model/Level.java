@@ -1,4 +1,4 @@
-package be.intecbrussel.log;
+package be.intecbrussel.simpleblog.model;
 
 public enum Level {
     DEBUG,
